@@ -1,0 +1,9 @@
+node{
+stag('build'){
+if (isUnix()){
+ sh "mvn package"
+}else{
+bat "mvn package"
+}
+}
+}
